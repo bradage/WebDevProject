@@ -3,36 +3,75 @@
 <head>
     <title>Rock Climbing Cache Outdoors</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="Style.css" >
+    <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
+
 <body>
-    <div id="container">
-        <header>
+    <div id="outerContainer">
+
+        <div id="header">
             <h1>Bradey's Cache Valley Outdoors</h1>
-        </header>
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="backpacking.html">Backpacking</a></li>
+                    <li><a href="rockclimbing.html" class="current">Rock Climbing</a></li>
+                    <li><a href="hiking.html">Hiking</a></li>
+                </ul>
+            </div> <!--nav-->
+        </div> <!-- header -->
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="backpacking.html">Backpacking</a></li>
-                <li><a href="rockclimbing.html" class="current">Rock Climbing</a></li>
-                <li><a href="hiking.html">Hiking</a></li>
-            </ul>
-        </nav>
+        <div id="mainContainer">
+            <div id="rc_aside">
+                <h4>This is the Aside</h4>
 
-        <aside>
-            <h6>This is the Aside</h6>
-        </aside>
+                <p class="quote">
+                    "I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could
+                    not learn what it had to teach, and not, when I came to die, discover that I had not lived."
+                </p>
 
-        <section>
-            <h2>Rock Climbing in the Cache Valley Area</h2>
-        </section>
+                <p class="author">
+                    - Henry David Thoreau
+                </p>
 
-        <footer>
-            <h6>this is the footer</h6>
-        </footer>
-    </div>
+
+                <img class="portrait" src="../images/personal_portrait.jpg" width="120" height="120" alt="me and my fam" />
+            </div> <!-- aside -->
+
+            <p class="endLine" />
+
+            <div id="rc_content">
+                <section>
+                    <h2>Rock Climbing in the Cache Valley Area</h2>
+
+                    <p>
+                        There are few places that have as many fun exciting things to offer outdoors as the Cache Valley area.  Nestled
+                        in the quiet mountains of Northern Utah and South-Eastern Idaho at 4,469 feet, Cache Valley offers many fun trails for hiking, backpacking,
+                        rock climbing and so much more.
+                    </p>
+
+                    <p>
+                        Whether you wish to soak up some warm sunlight, enjoy the coolness of shaded trails and climbing areas, explore and get away from the daily grind
+                        or experience sites that one can only obtain by being outdoors come explore some of the great places I have ventured to with family and friends.
+                        Still not convinced?  Browse the site and see for yourself or come visit Cache Valley and see.
+                    </p>
+
+                    <p>
+                        How do you get to Cache Valley?
+                    </p>
+                    
+                </section>
+            </div> <!--content-->
+        </div> <!-- mainContainer -->
+    </div> <!-- outerContainer -->
+    <div id="footer">
+        <table>
+            <tr>
+                <td><a href="mailto:cvoutdoors@cvoutdoors.org" title="Contact Me">Contact Me</a></td>
+            </tr>
+        </table>
+    </div>   
 </body>
 
 </html>

@@ -1,29 +1,31 @@
 ﻿body {
-     background: #2E2C2B;
+     background: #0D0B08;
 }
 
 #outerContainer {
     width: 1366px;
-    background: #54493F;
-    margin:auto;
-    position:relative;  
-    height: 875px;   
+    background: #2B1D10;
+    position:relative; 
+    margin-left: 143px; 
+    height: 800px;   
 }
 
+/* -----------------------  Header -----------------------  */
 #header {
-    text-align: left;
-    padding: 10px 10px 10px 75px;
-    color: #9A6C40;
-    height: 65px;
-    width: 1366px;
+    position: relative;
+    color: #CC9933;
+    height: 110px;
+    padding: 10px 0px 0px 0px;
+    margin-left: 150px;
 }
+
+/* -----------------------  Navigation -----------------------  */
 
 #header #nav {
     position: absolute;
-    left: 150px;
+    left: 320px;
     bottom: 0px;
 }
-
 
 #nav ul {
     list-style: none;
@@ -43,67 +45,166 @@
     color: #282828;
     text-decoration: none;
     padding: 0 15px 0 30px;
-    line-height: 50px;
-    background: url(../images/menu_home_dark.jpg) no-repeat left bottom;
-    background-size: 80px 45px; 
+    margin: 10px;
+    line-height: 30px;
+    background: url(../images/nav_menu_rollover.jpg) no-repeat left bottom;
     border:none;
 }
 
 #nav li a:hover, #nav li a:active {
-    color: #282828;
+    color: #ffffff;
     background-position: left top;
-    /*background-size: 80px 45px; */
 }
 
-#nav ul li a.Current {
-    margin-top: -5px;
+#nav ul li a.current {
+    margin-top: 5px;
     height: 30px;
-    background: url(../images/menu_home_light.jpg) no-repeat;
-    color: #aaa;
-    line-height: 25px;
+    background: url(../images/nav_menu_current.jpg) no-repeat;
+    color: #;
+}
+
+#nav ul li a.current:hover {
+    cursor: default;
 }
 
 
-/*    
-#nav {
-    display: table;
-    height: 87px;
-    width: 100%;
+/* -----------------------  mainContent -----------------------  */   
+
+div#mainContent {
+    width: 1366px;
+    height: 645px;
 }
 
-#nav li {
-    display: table-cell;
-    height: 87px;
-    width: 16.666666667%;  /* (100 / numItems)% */
-   /* line-height: 87px;
-    text-align: center;
-    background: #ddd;
-    border-right: 1px solid #fff;
-    white-space: nowrap;
-}​
- 
-@media (max-width: 767px) {
-    #nav li {
-        display: block;
-        width: 100%;
-    }
-}
- */
+/* -----------------------  Aside -----------------------  */
 
-   
+div#aside {
+    background: url(../images/aside_homebrn.jpg) no-repeat;
+    background-size: 190px 645px;
+    position: absolute;    
+    width: 190px; 
+    height: 645px;
+    padding: 0px 5px 0px 5px;
+    margin-left: 10px;
+}
+
+#aside p.quote {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+#aside p.author {
+    font: italic 12px Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+}
+
+#aside img.portrait {
+    padding: 32px;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* ------  Rock Climbing Aside  ------  */
+
+div#rc_aside {
+    background: url(../images/aside_rc.jpg) no-repeat;
+    background-size: 190px 645px;
+    position: absolute;    
+    width: 190px; 
+    height: 645px;
+    padding: 0px 5px 0px 5px;
+    margin-left: 10px;
+}
+
+#rc_aside p.quote {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+#rc_aside p.author {
+    font: italic 12px Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+}
+
+#rc_aside img.portrait {
+    padding: 32px;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* ------  Backpacking Aside  ------  */
+
+div#bp_aside {
+    background: url(../images/aside_rc.jpg) no-repeat;
+    background-size: 190px 645px;
+    position: absolute;    
+    width: 190px; 
+    height: 645px;
+    padding: 0px 5px 0px 5px;
+    margin-left: 10px;
+}
+
+#bp_aside p.quote {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+#bp_aside p.author {
+    font: italic 12px Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+}
+
+#bp_aside img.portrait {
+    padding: 32px;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* ------  Hiking Aside  ------  */
+
+div#h_aside {
+    background: url(../images/aside_rc.jpg) no-repeat;
+    background-size: 190px 645px;
+    position: absolute;    
+    width: 190px; 
+    height: 645px;
+    padding: 0px 5px 0px 5px;
+    margin-left: 10px;
+}
+
+#h_aside p.quote {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+#h_aside p.author {
+    font: italic 12px Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+}
+
+#h_aside img.portrait {
+    padding: 32px;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* -----------------------  content -----------------------  */
 div#content {
     background: url(../images/valleywest_east_darkish.jpg) no-repeat;
-    background-size: 1130px 636px;
+    background-size: 1146px 645px;
     position:absolute;
     width: 1146px;
     height: 645px;
     right: 0px;
-    bottom: 30px;
+    margin-right: 10px;
 }
 
 #content h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #13100C;/*0B0A08*/
+    color: #13100C;
     margin: 0px 10px 0px 10px;
 }
 
@@ -117,41 +218,49 @@ div#content {
 
 #content ol {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
-div#aside {
-    position: absolute;
-    left: 10px;
-    width: 190px; 
-    height: 700px;
-    border-color: #282828;
-    border-right: solid;
+/* ------  Rock Climbing content ------  */
+div#rc_content {
+    background: url(../images/rc_content.jpg) no-repeat;
+    background-size: 1146px 645px;
+    position:absolute;
+    width: 1146px;
+    height: 645px;
+    right: 0px;
+    margin-right: 10px;
 }
 
-#aside img.portrait {
-    padding: 35px;
-    position: absolute;
-    bottom: 0px;
+#rc_content h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #13100C;
+    margin: 0px 10px 0px 10px;
 }
 
-footer {
-    color: #282828;
-    position: absolute;
-    bottom: 10px;
+#rc_content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #13100C;
+    margin: 10px 10px 0px 25px;
+}
+
+
+/* -----------------------  Footer -----------------------  */
+div#footer {
+    background: #575c22;
+    color: #82864b;
     width: 1366px;
-    padding: 20px 10px 10px 10px;
+    margin-left: 143px;
+    padding-top: 5px;
 }
 
-
-
-div#aside {
-    float: left;
-    width: 200px;
-    padding: 0;
-    border-right: groove #ffffff 2px;
+#footer table {
+    margin-left: 120px;
 }
 
+/* -----------------------  Other -----------------------  */
 .endLine {
     clear:both
 }
