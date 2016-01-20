@@ -80,7 +80,7 @@ div#mainContent {
 div#aside {
     background: url(../images/aside_homebrn.jpg) no-repeat;
     background-size: 190px 645px;
-    position: absolute;    
+    position: fixed;    
     width: 190px; 
     height: 645px;
     padding: 0px 5px 0px 5px;
@@ -103,6 +103,7 @@ div#aside {
     position: absolute;
     bottom: 0px;
 }
+
 
 /* ------  Rock Climbing Aside  ------  */
 
@@ -136,7 +137,7 @@ div#rc_aside {
 /* ------  Backpacking Aside  ------  */
 
 div#bp_aside {
-    background: url(../images/aside_rc.jpg) no-repeat;
+    background: #82864b;
     background-size: 190px 645px;
     position: absolute;    
     width: 190px; 
@@ -148,7 +149,7 @@ div#bp_aside {
 #bp_aside p.quote {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    padding: 0px 5px 0px 5px;
+    padding: 10px 5px 0px 5px;
 }
 
 #bp_aside p.author {
@@ -156,12 +157,18 @@ div#bp_aside {
     padding-left: 20px;
 }
 
-#bp_aside img.portrait {
-    padding: 32px;
-    position: absolute;
-    bottom: 0px;
+
+#bp_aside img.asidePortrait {
+   padding: 10px 40px 10px 40px;
+   height: 200px;
+   width: 108px;
 }
 
+#bp_aside img.asideLandscape {
+    padding: 15px;
+    height: 120px;
+    width: 160px;
+}
 /* ------  Hiking Aside  ------  */
 
 div#h_aside {
@@ -223,7 +230,7 @@ div#content {
 
 /* ------  Rock Climbing content ------  */
 div#rc_content {
-    background: url(../images/rc_content.jpg) no-repeat;
+    background: url(../images/rc_background.jpg) no-repeat;
     background-size: 1146px 645px;
     position:absolute;
     width: 1146px;
@@ -246,6 +253,35 @@ div#rc_content {
     margin: 10px 10px 0px 25px;
 }
 
+/* ------  Back Packing content ------  */
+div#bp_content {
+    background: url(../images/bp_background.jpg) no-repeat;
+    background-size: 1146px 645px;
+    position:absolute;
+    width: 1146px;
+    height: 645px;
+    right: 0px;
+    margin-right: 10px;
+}
+
+#bp_content h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #13100C;
+    margin: 0px 10px 0px 10px;
+}
+
+#bp_content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #13100C;
+    margin: 10px 10px 0px 25px;
+}
+
+#bp_content ol {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+}
 
 /* -----------------------  Footer -----------------------  */
 div#footer {
