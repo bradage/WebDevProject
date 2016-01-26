@@ -107,7 +107,7 @@ div#aside {
 /* ------  Other Aside  ------  */
 
 div#o_aside {
-    background-color: #9a7b4f;
+    background-color: #794924;
     background-size: 190px 645px;
     position: absolute;    
     width: 190px; 
@@ -194,6 +194,16 @@ div#o_content {
     line-height: 1.5em;
     color: #13100C;
     margin: 10px 10px 0px 25px;
+}
+
+#o_content table {
+    margin-left: 300px;
+}
+
+#o_content table tr td img.tableImg {
+    width: 175px;
+    height: 131px;
+    padding: 2px;
 }
 
 /* -----------------------  Footer -----------------------  */
