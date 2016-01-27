@@ -216,7 +216,11 @@ div#footer {
 }
 
 #footer table {
-    margin-left: 120px;
+    margin-left: 275px;
+}
+
+#footer td {
+    padding-left: 50px;
 }
 
 /* -----------------------  Other -----------------------  */
